@@ -63,30 +63,6 @@ def Get_Filtered_Rating(bits, pos, isC02):
   if len(filtered) == 1:
     return filtered[0]
   return Get_Filtered_Rating(filtered, pos + 1, isC02)
-
-# def Get_Oxygen_Generator_Rating(bits, pos):
-#   filtered = []
-#   mcb = Get_MCB(bits, pos)
-  
-#   for bit in bits:
-#     if int(bit[pos]) == mcb:
-#       filtered.append(bit)
-#   if len(filtered) == 1:
-#     return filtered[0]
-#   return Get_Oxygen_Generator_Rating(filtered, pos + 1)
-
-  
-# def Get_CO2_Scrubber_Rating(bits, pos):
-#   filtered = []
-#   mcb = Get_MCB(bits, pos)
-  
-#   for bit in bits:
-#     if int(bit[pos]) != mcb:
-#       filtered.append(bit)
-#   if len(filtered) == 1:
-#     return filtered[0]
-#   return Get_CO2_Scrubber_Rating(filtered, pos + 1)
-
   
 
 Solution()
